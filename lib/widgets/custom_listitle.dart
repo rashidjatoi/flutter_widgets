@@ -14,11 +14,18 @@ class CustomListitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      onTap: onTap,
-      title: Text(title),
-      subtitle: Text(subTitle),
-      trailing: Icon(Icons.arrow_forward_ios),
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10.0,
+        vertical: 5,
+      ),
+      child: ListTile(
+        onTap: onTap,
+        tileColor: Colors.white10,
+        title: Text(title),
+        subtitle: Text(subTitle),
+        trailing: Icon(Icons.arrow_forward_ios),
+      ),
     );
   }
 }
