@@ -13,6 +13,7 @@ import 'widgets/long_press_dragable_widget.dart';
 import 'widgets/material_banner_widget.dart';
 import 'widgets/preferred_sized_widget.dart';
 import 'widgets/reorder_listview_widget.dart';
+import 'widgets/table_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -106,7 +107,7 @@ class HomeView extends StatelessWidget {
             title: 'Table',
             subTitle: 'Simple Table Widget',
             onTap: () {
-              Get.to(() => CupertinoContextMenuWidget());
+              Get.to(() => TableWidget());
             },
           ),
         ],
